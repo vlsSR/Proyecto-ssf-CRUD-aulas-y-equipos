@@ -5,14 +5,14 @@ import java.awt.*;
 
 public class VentanaAulas extends JFrame {
     //zona norte
-    //public JComboBox<model.Aulas> comboAulas;
+    public JComboBox<model.Aulas> comboAulas;
     //zona centro izquierda
     public JTextField txtMarcaModelo, txtProcesador, txtIP, txtOP, txtRAM, txtAlmacenamiento;
     // zona norte en conjunto con ComboBox
     public JTextField txtCodAula, txtNombreAula, txtUbicacion, txtCapacidad;
     //zona centro derecha
-    //public JList<model.Equipos> listaEquipos;
-    //public DefaultListModel<model.Equipos> modelListaEquipos;
+    public JList<model.Equipos> listaEquipos;
+    public DefaultListModel<model.Equipos> modelListaEquipos;
     //zona sur (botones)
     public JButton btnAgregar, btnModificarRam, btnClausurarAula, btnNuevaAula;
 
@@ -29,13 +29,13 @@ public class VentanaAulas extends JFrame {
         JPanel panelNorte = new JPanel(new GridLayout(2,2,10,10));
         panelNorte.setBorder(BorderFactory.createTitledBorder("Selección de Aula"));
 
-        /*
+
         comboAulas = new JComboBox<>();
         comboAulas.setPreferredSize(new Dimension(200, 30));
         panelNorte.add(comboAulas);
         panelNorte.add(btnNuevaAula = new JButton("Nueva Aula"));
 
-         */
+
 
         JPanel panelInformativo = new JPanel(new GridLayout(2,2,5,5));
         panelInformativo.add(new JLabel("Código: "));
@@ -90,7 +90,7 @@ public class VentanaAulas extends JFrame {
         JPanel panelLista = new JPanel(new BorderLayout());
         panelLista.setBorder(BorderFactory.createTitledBorder("Lista de Equipos"));
 
-        /*
+
         modelListaEquipos = new DefaultListModel<>();
         listaEquipos = new JList<>(modelListaEquipos);
         listaEquipos.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
@@ -98,7 +98,7 @@ public class VentanaAulas extends JFrame {
         //meter la lista en ScrollPane
         JScrollPane scrollListaEquipos = new JScrollPane(listaEquipos);
         panelLista.add(scrollListaEquipos, BorderLayout.CENTER);
-         */
+
         //Se añade al panel central
         panelCentro.add(panelLista, BorderLayout.WEST);
 
