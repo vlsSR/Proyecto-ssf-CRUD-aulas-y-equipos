@@ -11,11 +11,7 @@ public class Conexion {
     private static final String password = "Papitas.02";
 
     public static Connection getConnection() {
-        try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
-        } catch (ClassNotFoundException e) {
-            System.err.println("No se encontró el conector de MySQL (JAR): "+e.getMessage());
-        }
+
         try {
             connection = DriverManager.getConnection(url, usuario, password);
             connection.createStatement().execute("CREATE DATABASE IF NOT EXISTS "+ base);
