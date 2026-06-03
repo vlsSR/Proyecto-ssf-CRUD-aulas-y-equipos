@@ -1,12 +1,12 @@
 package model;
 
-public class Aula {
+public class Aulas {
     private String Cod_aula;
     private String Nombre_aula;
     private String Ubicacion;
     private int Capacidad_Alumnos;
 
-    public Aula(String cod_aula, String nombre_aula, String ubicacion, int capacidad_Alumnos) {
+    public Aulas(String cod_aula, String nombre_aula, String ubicacion, int capacidad_Alumnos) {
         this.Capacidad_Alumnos = capacidad_Alumnos;
         this.Cod_aula = cod_aula;
         this.Nombre_aula = nombre_aula;
