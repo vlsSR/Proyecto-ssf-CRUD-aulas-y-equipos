@@ -1,5 +1,9 @@
 # Software de gestion de aulas 
 
+### Gitbook
+Para acceder a información amplicada consultar el siguiente gitbook:
+https://ssf-proyecto.gitbook.io/ssf/
+
 ### Objetivo
 Nuestro software permite hacer un CRUD de gestión de aulas con equipos informáticos en ella. Siguiendo las siguientes normas:
 
